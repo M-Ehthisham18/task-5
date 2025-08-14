@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: cornflowerblue;
+}
+
+main{
+  width: clamp(320px,100vw,1000px);
+  margin: auto;
+  height: 100vh;
+  
+  h1{
+    text-align: center;
+  }
+  
+  .form{
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:24px clamp(12px, 3vw, 54px);
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px gray;
+
+    input, select{
+      width: clamp(200px,90vw,600px);
+      outline: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin: 12px 0;
+      font-size: 18px;
+
+      &:focus{
+        background-color: rgba(232, 232, 231, 0.559);
+      }
+    }
+    .radio{
+      display: flex;
+      gap:0 4px;
+      align-items: center;
+
+      input{
+        width: unset;
+        padding: 0px 12px;
+        margin: 0 6px;
+      }
+    }
+
+    .sub-btn{
+      padding: 4px 12px;
+      background-color: rgb(86, 171, 255);
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      align-self: flex-end;
+      color: black;
+      font-weight: 700;
+
+      &:hover{
+        box-shadow: 3px 3px 6px gray;
+      }
+      &:active{
+        scale: 0.9;
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 3px;
+}
+
+input.error-border,
+select.error-border {
+  border: 2px solid red;
+}

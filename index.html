@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task-5 form validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+  <h1>User form</h1>
+
+  <div class="form">
+    <form id="userForm">
+  <!-- Name -->
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <small class="error"></small>
+  </div>
+
+  <!-- Email -->
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <small class="error"></small>
+  </div>
+
+  <!-- Gender -->
+  <div class="radio">
+    <label>Gender:</label>
+    <label><input type="radio" name="Gender" value="Male"> Male</label>
+    <label><input type="radio" name="Gender" value="Female"> Female</label>
+    <label><input type="radio" name="Gender" value="Other"> Other</label>
+    <small class="error"></small>
+  </div>
+
+  <!-- Age -->
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age">
+    <small class="error"></small>
+  </div>
+
+  <!-- State -->
+  <div>
+    <label for="state">State:</label>
+    <select name="state" id="state">
+      <option value="" disabled selected>Select</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+    </select>
+    <small class="error"></small>
+  </div>
+
+  <button type="submit" class="sub-btn">Submit</button>
+</form>
+
+  </div>
+  
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
